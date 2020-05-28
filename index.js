@@ -4,7 +4,7 @@ var nodemailer = require('nodemailer');
 var cors = require('cors');
 const creds = require('./config');
 
-var transport = {
+const transport = {
   host: 'smtp.gmail.com',
   port: 587,
   auth: {
@@ -53,4 +53,4 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use('/', router)
-app.listen(3002)
+app.listen('https://agitated-kare-4b7757.netlify.app')
